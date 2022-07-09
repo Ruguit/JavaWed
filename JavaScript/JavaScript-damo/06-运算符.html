@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    /*
+    == 等于  ：会先比较数据的类型是否相同，不一样就会转变为一样的  然后再比较值
+
+
+    === 全等于  ：：会先比较数据的类型是否相同，不一样就会直接返回false  一样再比较值
+    */
+
+    var a=1;
+    var b="1";
+
+   //alert(a==b);//true
+   //alert(a===b);//false
+
+
+
+   /*
+
+   数据类型的转换：
+        其他类型转number：
+            1.string：按照字符串的字面值转换为数字，如果字面值不是数字，就转换为NaN 一般使用parseInt()
+            2.boolean：true 转为1 false 转为0
+        其他类型转Boolean：
+            1.number:0与NaN会转换为false 其他数字转换为true
+            2.空字符串转换为false 其他的字符串转换为true
+            3.null：转换为false
+            4.undefined: false
+   */
+
+   //var str="20";
+   //alert(parseInt(str)+1);
+
+
+  // var flog=+true;
+   //alert(flog);
+
+   // 1.number:0与NaN会转换为false 其他数字转换为true
+   var flog=0;
+   if(flog){
+        alert("true")
+   }else{
+        alert("false");
+   }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+
+//typeof运算符可以获取数据的类型
+    var test=1;
+    alert(typeof test);//number
+
+    var testString="李华";
+    alert(typeof testString);//string
+
+    var flog=true;
+    alert(typeof flog);//boolean
+
+    var testNumber=null;
+    alert(typeof testNumber);//object
+    /*
+    为什么 typeof 运算符对于 null 值会返回 "Object"。
+    这实际上是 JavaScript 最初实现中的一个错误
+    ，然后被 ECMAScript 沿用了。现在，null 被认为是对象的占位符
+    ，从而解释了这一矛盾，但从技术上来说，它仍然是原始值。
+    */
+
+    var num;
+    alert(typeof num);//undefined 属于变量未复制时的默认值
+</script>
+
+
+</body>
+</html>
