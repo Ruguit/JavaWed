@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="#"method="post">
+    <!--隐藏属性-->
+    <input type="hidden" name="id" value="123">
+
+    <!--使用label使两者产生关联  通过id这个唯一标识-->
+    <label for="username">用户名:</label>
+    <input type="text" name="username" id="username"> <br>
+    <!--下面的密码是不关联的版本-->
+    密码:<input type="password" name="password"><br>
+
+    性别:
+    <input type="radio" name="gender" value="1" id="n"><label for="n">男</label>
+    <input type="radio" name="gender" value="2" id="w"><label for="w">女</label><br>
+
+    爱好:
+    <input type="checkbox" name="hobby" value="1">旅游
+    <input type="checkbox" name="hobby" value="1">电影
+    <input type="checkbox" name="hobby" value="1">游戏
+    <br>
+
+    城市:
+    <select>
+        <!--添加value值 表现的是北京 单提交的是value的数值-->
+        <option value="beijing">北京</option>
+        <option>上海</option>
+        <option>广州</option>
+    </select>
+
+    <br>
+    个人描述:
+    <!--20列 5行-->
+        <textarea cols="20" rows="5" name="desc">
+
+        </textarea>
+    <br>
+
+    文件上传:
+    <input type="file"><br>
+    <br>
+    <input type="submit" value="提交">
+    <input type="reset" value="重置">
+    <input type="submit" value="一个按钮">
+</form>
+
+</body>
+</html>
