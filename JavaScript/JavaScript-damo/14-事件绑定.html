@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<input type="button" value="点我" onclick="module1()" ><br>
+<input type="button" value="再点我" id="btn">
+<script>
+   function module1() {
+   		alert("无视风险，继续安装?");
+   }
+   document.getElementById("btn").onclick=function() {
+   		alert("安装成功！")
+   }
+
+   //常见的事件：onsubmit 用于表单验证：方法里面返回true就提交 false不提交
+
+</script>
+
+</body>
+</html>

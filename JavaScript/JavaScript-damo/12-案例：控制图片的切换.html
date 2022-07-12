@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+<body>
+
+<input type="button" onclick="on()" value="开灯">
+<img  id="myImage" border="0" src="文件的路径" style="...">
+<input type="button" onclick="off()" value="关灯">
+
+<script type="text/javascript">
+		function on() {
+			document.getElementsByTagName('myImage').src='文件的路径'
+		}
+		function off() {
+			document.getElementsByTagName('myImage').src='文件的路径'
+		}
+		var x=0;
+		setInterver(function () {
+			if(x%2==1){
+				on()
+			}else{
+				off()
+			}
+			x++
+		},1000);
+	</script>
+
+</body>
+</html>

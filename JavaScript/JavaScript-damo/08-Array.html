@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+//方式1：
+        var arr=new Array(1,2,3);
+        //alert(arr);
+//方式2：
+        var arr2=[1,2,3];
+        //alert(arr2);
+
+        //访问 通过元素
+        //alert(arr2[0]);
+
+        //特点：JavaScript里面的数组相当于Java里面的集合 变长变类型的
+        var arr3=[1,2,3];
+        arr3[10]=10;
+        //alert(arr3[10]);
+
+        //属性；length数组中的元素个数
+        var arr4=[1,2,3];
+        //alert(arr4.length);
+
+        //push();添加
+        arr4.push(10);
+        //alert(arr4);
+
+        //splice(从哪里删除元素，删除几个)
+        arr4.splice(0,1);
+        alert(arr4);
+</script>
+</body>
+</html>
